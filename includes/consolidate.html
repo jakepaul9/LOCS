@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+    <title>Consolidation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link type="text/css" rel="stylesheet" href="../css/general.css"/>
+</head>
+<body>
+    <div id="controlBar" class="shadow">
+        <div id="leftControls">
+
+            <button id="addPallet" onClick="addPallet()"><img src="../images/plus.png" alt="add pallet"/></button>
+            <input id="palletNumber" type="text" />
+        </div>
+        <div id="rightControls">
+            <button id="largeQty"><img src="../images/fullPallet.png" alt="Lg Qty"/></button>
+            <input id="mainScanInput"/>
+        </div>
+    </div>
+    <div id="buildPallet">
+        <table id="partsTable">
+            <thead>
+                <tr>
+                    <th style="width:30%">Item ID</th>
+                    <th style="width:20%">Case Qty</th>
+                    <th style="width:20%">Unit Qty</th>
+                    <th style="width:20%">Weight</th>
+                    <th style="width:10%"></th>
+                </tr>
+            </thead>
+            <tbody id="partsList">
+
+            </tbody>
+        </table>
+    </div>
+    <div id="getInfoContainer">
+        <div id="getInfo" class="shadow">
+            <div>Staging Number <input id="stage" class="infoRequired" type="text"></div>
+            <div>US Number <input id="us" class="infoRequired" type="text"></div>
+            <div>Counter<select id="count_1" class="infoRequired">
+                <option disabled selected value> Choose </option>
+                <option value="Jake">Jake</option>
+                <option value="Jordan">Jordan</option>
+                <option value="Ron">Ron</option>
+                <option value="Kevin">Kevin</option>
+                <option value="Josh">Josh</option>
+                <option value="Tyler">Tyler</option>
+                <option value="Matt">Matt</option>
+                <option value="Travis">Travis</option>
+            </select> <!-- <input id="count_1" class="infoRequired" type="text">--></div>
+            <div id="btnGroup">
+                <button onClick="cancelCon()">Cancel</button>
+                <button onClick="beginCon()">Begin</button>
+            </div>
+        </div>
+    </div>
+    <div id="display">
+        <div id = "report" style="margin:auto;margin-bottom:60px;width:8.5in;background-color:white;min-height:10in;"></div>
+        <div id="reportBtns" style="position:fixed;bottom:0px;left:0px;width:100%;background-color:black;"><button onClick="hide()">Back</button><button onClick="printReport()">Save / Print</button></div>
+    </div>
+    </div>
+    <div id="footer">
+        <a id="home" href="../index.html"><img src="../images/home.png" alt="home"/></a>
+
+        <div id="centerBtn"><button id="completeOrder" onClick="completeCon()">Review</button></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='../js/report.js'></script>
+    <!--<script src="../../jquery.scannerdetection.js"></script>-->
+    <script src="../js/consolidate.js"></script>
+</body>
+</html>

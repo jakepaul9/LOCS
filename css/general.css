@@ -1,0 +1,355 @@
+/* 
+    Created on : Aug 29, 2017, 4:31:47 PM
+    Author     : jakegrether
+
+    Page Element Defaults 
+*/
+
+html {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+input {
+    line-height:30px;
+    border:1px darkslategray solid;
+    border-radius:5px;
+    margin:5px;
+    font-size:16px;
+    width:158px;
+}
+select {
+    line-height:36px;
+    border:1px darkslategray solid;
+    border-radius:5px;
+    margin:5px;
+    font-size:16px;
+    width:158px;
+}
+button {
+    height:40px;  
+    margin:5px;
+    background-color:#eea236;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+}
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#container {
+    width:100%;
+    min-height:200px;
+    margin:auto;
+    padding:0px;
+}
+#mainOptions {
+    width:500px;
+    margin:auto;
+    margin-top:200px;
+}
+.mainBtn {
+    width:230px;
+    height:230px;
+    background-color:#337ab7;
+    color:white;
+    border:none;
+    border-radius:20px;
+    text-align:center;
+    line-height:230px;
+}
+#mainBtnRight {
+    float:right;
+}
+#mainBtnRight img {
+    width:190px;
+    margin-top:20px;
+}
+#mainBtnLeft {
+    float:left;
+}
+#mainBtnLeft img {
+    width:160px;
+    margin-top:18px;
+}
+#controlBar {
+    overflow: hidden;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width:100%;
+    margin-left:-8px;
+    height:51px;  
+    background-color:#337ab7;
+    line-height:50px;
+    color:white;
+}
+#leftControls {
+    float:left;
+    font-size:30px;
+}
+#mainScanInput {
+    float:right;
+    padding-left:10px;
+}
+#rightControls {
+    float:right;
+}
+#mainScanInput {
+    width:250px;
+}
+#palletNumber {
+    width:40px;
+    float:left;
+    text-align:center;
+}
+#addPallet {
+    width:40px;
+    float:left;
+    font-size:30px;
+}
+#palLabel {
+    margin:0px;
+    margin-right:10px;
+    margin-left:10px;
+    width:70px;
+    float:left;
+}
+#largeQty {
+    background-color:#337ab7;
+}
+#largeQty img {
+    width:35px;
+}
+#footer {
+    overflow: hidden;
+    z-index: 2;
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    padding: 5px;
+    background-color: #337ab7;
+    color: white;
+    margin-top:30px;
+}
+#centerBtn {
+    width:200px;
+    margin:auto;
+    margin-top:-5px;
+}
+#completeOrder {
+    width:100%;
+    height:30px;
+}
+#home {
+    float:right;
+    margin-top:3px;
+    margin-right:20px;
+}
+#partsTable {
+    width:100%;
+    margin-top:80px;
+    border-spacing:0px;
+}
+#partsTable thead {
+    table-layout:fixed;
+}
+#partsTable th {
+    background-color:dimgray;
+    color:white;
+    height:40px;
+    text-align:center;
+}
+#partsList td {
+    height:60px;
+    border-top:1px lightgray solid;
+    text-align:center;
+}
+#trash {
+    width:20px;
+}
+#cases {
+    width:70px;
+    text-align:center;
+}
+#display {
+    font-family: Verdana,Geneva,sans-serif;
+    position:absolute;
+    top:0px;
+    left:0px;
+    margin:auto;
+    width:100%;
+    min-height:100%;
+    z-index:999;
+    visibility:hidden;
+    background-color:rgba(0, 0, 0, 0.5);
+    overflow:scroll;
+    
+}
+#buildPallet{
+    overflow:hidden;
+}
+#reportHeader1 {
+    font-size:12pt;
+    margin:auto;
+    margin-top:50px;
+    margin-bottom:30px;
+    width:100%;
+}
+#reportHeader2 {
+    font-size:12pt;
+    margin:auto;
+    margin-top:50px;
+    margin-bottom:-5px;
+    width:100%;
+}
+#conItems {
+    width:100%;
+    margin:auto;
+    border-collapse: collapse;
+    font-size:10pt;
+}
+#conItemsTitle {
+    font-weight:bold; 
+}
+#conItems td {
+    width:33%;
+    border-bottom:1px black solid;
+    padding:2px;
+}
+#mainInfo {
+    margin:38px 0px 0px 50px;
+    line-height:1.5em;
+    float:left;
+    font-size:12pt;
+}
+#conTotals {
+    font-size:12pt;
+    font-weight:bold;
+    line-height:1.3em;
+    width:200px;
+    float:right;
+    margin: 38px 50px 0px 0px;
+}
+#pallet {
+    font-size:10px;
+    float:left;
+    margin-top:40px;
+}
+#palTotals {
+    font-size:11pt;
+    width:50%;
+    border-collapse:collapse;
+    border:1px black solid;
+    line-height:1.5em;
+
+
+}
+#palTotals td {
+    width:70px;
+    padding:2px;
+    border-top:1px black solid;
+}
+#palItems {
+    font-size:10pt;
+    text-align: center;
+    border-collapse: collapse;
+    width:3.2in;
+
+}
+#palItems td {
+
+}
+#itemsHeader {
+    font-weight:bold;
+    padding:10px;
+}
+#palsContainer {
+    height:100%;
+    width:85%;
+    margin:auto;
+}
+.caseInput {
+    width:50px;
+    text-align:center;
+}
+.conTotLabel {
+    text-align:right;
+    width:50%;
+}
+.conTotLabel1 {
+    text-align:right;
+}
+.divider {
+    float:left;
+    clear:both;
+    width:100%;
+    height:1px;
+}
+@media print {
+    @page { margin: 0; }
+    table {page-break-inside:avoid;}
+    #conItems { page-break-inside:auto }
+    #conItems tr    { page-break-inside:avoid; page-break-after:auto }
+}
+.centerDiv {
+    margin-top:50px;
+    min-height:100px;
+    float:left;
+    width:.7in;
+}#pNum {
+    margin-bottom:20px;
+}
+#pNum span{
+    width:90%;
+    height:90%;
+    display:block;
+    margin:auto;
+    text-align:center;
+    font-size:18pt;
+}
+
+/*GetInfo Modal*/
+#getInfoContainer {
+    position:absolute;
+    top:0px;
+    left:0px;
+    margin:auto;
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.5);
+    z-index:999;
+
+}
+#getInfo {
+    padding:20px;
+    border-radius:10px;
+    width:345px;
+    height:290px;
+    margin:auto;
+    margin-top:10%;
+    background-color:#337ab7;
+    color:white;
+
+}
+#getInfo div {
+    float:right;
+    margin-top:20px;
+}
+#getInfo input {
+    margin-left:20px;
+}
+#getInfo select {
+    margin-left:20px;
+    width:161px;
+    height:40px;
+}
+#getInfo button {
+    background-color:#eea236;
+    width:160px;
+}
+
+.infoRequired {
+    
+}
